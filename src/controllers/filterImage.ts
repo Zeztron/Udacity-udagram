@@ -12,6 +12,7 @@ const filterImage: RequestHandler = async (req: Request, res: Response) => {
 
   const filteredImage = await filterImageFromURL(imageUrl);
 
+  
   if (!filterImage) return res.status(422).send({ message: "Unable to proccess request." });
 
   return res.status(200).sendFile(filteredImage, () => deleteLocalFiles([filteredImage]));
