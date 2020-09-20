@@ -1,0 +1,35 @@
+{
+	"info": {
+		"_postman_id": "d36afb62-2f98-4778-8a81-761f19b58cc8",
+		"name": "Udacity Project 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Udacity Image Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/filteredimage?image_url=https://undark.org/wp-content/uploads/2020/02/GettyImages-1199242002-1-scaled.jpg",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"filteredimage"
+					],
+					"query": [
+						{
+							"key": "image_url",
+							"value": "https://undark.org/wp-content/uploads/2020/02/GettyImages-1199242002-1-scaled.jpg"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
